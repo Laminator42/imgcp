@@ -1,6 +1,5 @@
 import logging
 
-
 class CustomFormatter(logging.Formatter):
     grey = '\x1b[38;20m'
     cyan = '\x1b[36;20m'
@@ -8,8 +7,7 @@ class CustomFormatter(logging.Formatter):
     red = '\x1b[31;20m'
     bold_red = '\x1b[31;1m'
     reset = '\x1b[0m'
-    # format = '%(asctime)s - %(name)s - %(levelname)s - %(message)s (%(filename)s:%(lineno)d)'
-    format='[%(asctime)s] %(levelname)s: %(message)s (%(filename)s:%(lineno)d)'
+    format='[%(asctime)s] %(levelname)s: %(message)s'
 
     FORMATS = {
         logging.DEBUG: cyan + format + reset,

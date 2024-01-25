@@ -1,7 +1,8 @@
 import time
 
-from log import logger
+from src.log import logger
 
+logger.info('top of timing.py')
 
 def timed(func):
     def wrapper(*args, **kwargs):
